@@ -1,25 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello World Website</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Max Ratcliff - Programming Portfolio</title>
+
+    <!-- Link to Google Fonts (Roboto) -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap">
+
+    <!-- Link to External CSS file -->
     <link rel="stylesheet" href="styles.css">
+
 </head>
+
 <body>
+
+    <!-- Header & Navigation -->
     <header>
-        <h1>Hello, World!</h1>
-        <p>Welcome to my website. This is a placeholder page that you can edit later.</p>
+        <nav>
+            <a class="nav-link" href="#home">Home</a>
+            <a class="nav-link" href="#about">About</a>
+            <a class="nav-link" href="#portfolio">Portfolio</a>
+            <a class="nav-link" href="#contact">Contact</a>
+        </nav>
     </header>
-    <main>
-        <section>
-            <h2>About This Page</h2>
-            <p>This is a basic "Hello World" webpage that serves as a placeholder until more content is added. Feel free to modify this page as needed!</p>
-        </section>
-    </main>
+
+    <!-- Home Section -->
+    <div id="home" class="container">
+        <h1>Hi, I’m Max Ratcliff</h1>
+        <p>This is my under-construction website!</p>
+        <button onclick="window.location.href='#portfolio'">See My Work</button>
+    </div>
+
+    <!-- About Section -->
+    <div id="about" class="container">
+        <h2>About Me</h2>
+        <img src="profile.jpg" alt="Profile" style="border-radius: 50%; width: 150px; height: 150px;">
+        <p>I am a second year Applied Mathematics student at the University of California, Santa Cruz! My interests lie in Scientic Computing and Machine Learning, and I am intending on pursuing a Masters in either Computer Science or Applied Mathematics after graduation</p>
+        <h3>Technologies I Work With</h3>
+        <div class="card">
+            <img src="react-logo.png" alt="React">
+            <div class="card-content">
+                <h4>React</h4>
+                <p>Building modern, interactive web applications with React.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Section -->
+    <div id="portfolio" class="container">
+        <h2>My Portfolio</h2>
+        <div class="portfolio-cards">
+            <!-- Example Project Card -->
+            <div class="card">
+                <img src="project1.jpg" alt="Project 1">
+                <div class="card-content">
+                    <h4>Project 1</h4>
+                    <p>Short description of the project.</p>
+                    <a href="https://github.com/your-repo" target="_blank">View on GitHub</a>
+                </div>
+            </div>
+            <!-- Add more project cards as needed -->
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div id="contact" class="container">
+        <h2>Contact Me</h2>
+        <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
+            <label for="name">Name</label><br>
+            <input type="text" id="name" name="name"><br><br>
+            <label for="email">Email</label><br>
+            <input type="email" id="email" name="email"><br><br>
+            <label for="message">Message</label><br>
+            <textarea id="message" name="message"></textarea><br><br>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2024 Max Ratcliff</p>
+        <p>&copy; Max Ratcliff 2024</p>
     </footer>
+
+    <!-- Link to External JavaScript file -->
     <script src="script.js"></script>
+
 </body>
+
 </html>
