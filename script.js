@@ -10,8 +10,9 @@ document.querySelectorAll('a.nav-link').forEach(anchor => {
 });
 
 // Add a scroll effect for button in the Home section
-document.querySelector("#home button").addEventListener("click", function() {
-    document.querySelector("#portfolio").scrollIntoView({
+document.querySelector("#home button.nav-link").addEventListener("click", function(e) {
+    e.preventDefault();
+    document.querySelector(this.getAttribute('href')).scrollIntoView({
         behavior: "smooth"
     });
 });
@@ -38,4 +39,15 @@ function openProjectModal(projectName, projectDescription, projectLink) {
 }
 
 // Example usage: openProjectModal("Project 1", "This is a description of project 1.", "https://github.com/your-repo");
+
+// Add event listener for the "See My Work" button
+document.querySelector("#home button.nav-link").addEventListener("click", function(e) {
+    e.preventDefault();
+    document.querySelector(this.getAttribute('href')).scrollIntoView({
+        behavior: "smooth"
+    });
+});
+
+// Ensure smooth scrolling by adding the scroll-behavior: smooth; CSS property to the html element
+document.documentElement.style.scrollBehavior = "smooth";
 

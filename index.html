@@ -30,16 +30,25 @@
 
     <!-- Home Section -->
     <div id="home" class="container">
-        <h1>Hi, I’m Max Ratcliff</h1>
+        <h1>Hi, I'm Max Ratcliff</h1>
         <p>This is my under-construction website!</p>
-        <button onclick="window.location.href='#portfolio'">See My Work</button>
+        <a class="nav-link" href="#portfolio"><button>See My Work</button></a>
     </div>
 
     <!-- About Section -->
     <div id="about" class="container">
         <h2>About Me</h2>
-        <img src="/images/profile.jpg" alt="Profile" style="border-radius: 50%; width: 150px; height: 150px;">
-        <p>I am a second year Applied Mathematics student at the University of California, Santa Cruz! My interests lie in Scientic Computing and Machine Learning, and I am intending on pursuing a Masters in either Computer Science or Applied Mathematics after graduation</p>
+        <img 
+            src="/images/profile.jpg" 
+            alt="Profile" 
+            style="border-radius: 50%; width: 150px; height: 150px; object-fit: cover; object-position: center 0px;"
+            >
+        <p>
+        I am a second year Applied Mathematics student at the University of California, Santa Cruz! Currently taking courses on: SciML, PDEs, and Data Structures and Algorithms. I am currently working as a Research Assistant under Dr Simons perfoming
+        research on the impact of LLMs on foundational Math classes. 
+        <br><br>
+        My educational interests lie in Scientific Computing and Machine Learning, and I am intending on pursuing a Masters in CSE or SciCAM after graduation with the goal of working as a Machine Learning engineer or Research Scientist.
+        </p>
         <h3>Languages I Know</h3>
         <div class="language-cards">
             <!-- python -->
@@ -104,7 +113,34 @@
                 <img src="/images/githubpfp.png" alt="Project 1">
                 <div class="card-content">
                     <h4>Github Link</h4>
-                    <p>Im still constructing this website so here's a link to my github for now :)</p>
+                    <p>Im still constructing this website so here's a link to my GitHub for now :)</p>
+                    <a href="https://github.com/max-ratcliff" target="_blank">Open My Github Profile</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="/images/githubpfp.png" alt="Project 1">
+                <div class="card-content">
+                    <h4>Github Link</h4>
+                    <p>Im still constructing this website so here's a link to my GitHub for now :)</p>
+                    <a href="https://github.com/max-ratcliff" target="_blank">Open My Github Profile</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="/images/githubpfp.png" alt="Project 1">
+                <div class="card-content">
+                    <h4>Github Link</h4>
+                    <p>Im still constructing this website so here's a link to my GitHub for now :)</p>
+                    <a href="https://github.com/max-ratcliff" target="_blank">Open My Github Profile</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="/images/githubpfp.png" alt="Project 1">
+                <div class="card-content">
+                    <h4>Github Link</h4>
+                    <p>Im still constructing this website so here's a link to my GitHub for now :)</p>
                     <a href="https://github.com/max-ratcliff" target="_blank">Open My Github Profile</a>
                 </div>
             </div>
@@ -115,15 +151,30 @@
     <!-- Contact Section -->
     <div id="contact" class="container">
         <h2>Contact Me</h2>
-        <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
-            <label for="name">Name</label><br>
-            <input type="text" id="name" name="name"><br><br>
-            <label for="email">Email</label><br>
-            <input type="email" id="email" name="email"><br><br>
-            <label for="message">Message</label><br>
-            <textarea id="message" name="message"></textarea><br><br>
-            <button type="submit">Send Message</button>
-        </form>
+        <h3>Feel free to reach out to me via Email or LinkedIn! Or message me on Discord!<h3>
+        <div class="contact-cards">
+            <div class="card">
+                <img src="/images/gmail.png" alt="Email">
+                <div class="card-content">
+                    <h4><a href="mailto:max@ratcliff.cc">Email</a></h4>
+                    <p>Send me an Email!</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="/images/linkedin.png" alt="LinkedIn">
+                <div class="card-content">
+                    <h4> <a href="https://www.linkedin.com/in/max-ratcliff/" target="_blank">LinkedIn</a></h4>
+                    <p>Connect with me on LinkedIn!</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="/images/discord.png" alt="Discord">
+                <div class="card-content">
+                    <h4><a href="https://discord.com/users/vyed" target="_blank">Discord</a></h4>
+                    <p>Message me on Discord!</p>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- Footer -->
