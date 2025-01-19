@@ -174,8 +174,12 @@ header .nav-link:hover {
 
 .contact-cards {
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap; 
     gap: 20px;
+    justify-content: center;
+    padding: 20px;
+    max-width: 1200px;  /* Added: limits maximum width */
+    margin: 0 auto;     /* Added: centers the container */
 }
 
 /* Footer */
